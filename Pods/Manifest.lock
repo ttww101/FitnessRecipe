@@ -1,0 +1,65 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - FSCalendar (2.8.0)
+  - JCore (2.0.2)
+  - JPush (3.2.1):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - LeanCloud (16.1.0):
+    - LeanCloud/IM (= 16.1.0)
+    - LeanCloud/Storage (= 16.1.0)
+  - LeanCloud/IM (16.1.0):
+    - FMDB (~> 2.7.0)
+    - LeanCloud/Storage
+    - Starscream (~> 3.1.0)
+    - SwiftProtobuf (~> 1.5.0)
+  - LeanCloud/Storage (16.1.0):
+    - Alamofire (~> 4.8.0)
+  - LGButton (1.1.6)
+  - SkyFloatingLabelTextField (3.7.0)
+  - Starscream (3.1.0)
+  - SwiftProtobuf (1.5.0)
+
+DEPENDENCIES:
+  - Charts
+  - FSCalendar
+  - JPush
+  - LeanCloud
+  - LGButton
+  - SkyFloatingLabelTextField
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Charts
+    - FMDB
+    - FSCalendar
+    - JCore
+    - JPush
+    - LeanCloud
+    - LGButton
+    - SkyFloatingLabelTextField
+    - Starscream
+    - SwiftProtobuf
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  JCore: d4cbe6d178eaeb0ed263e42a6ebcb617855ef7cb
+  JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
+  LeanCloud: f9c74424b819acaed6b1524050f98c79bceb2b9b
+  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
+  SkyFloatingLabelTextField: 4b46db0ab1ccde0919cded29c656e6b4805eda04
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+  SwiftProtobuf: 241400280f912735c1e1b9fe675fdd2c6c4d42e2
+
+PODFILE CHECKSUM: 43e18670af00b607404003afdaa094b09bd00d7c
+
+COCOAPODS: 1.6.1

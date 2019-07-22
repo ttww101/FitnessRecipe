@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipeVC" customModule="FitnessRecipe" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="fLr-H0-xQ1" id="qHA-uD-ZBc"/>
+                <outlet property="threeBtn" destination="Bub-Su-Bc4" id="ErJ-pO-CGc"/>
+                <outlet property="twoBtn" destination="QqG-BS-tKi" id="aLu-rs-y7Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-H0-xQ1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uf9-J3-QvS">
+                    <rect key="frame" x="10" y="30" width="394" height="696"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMD-KQ-rqq">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="225.33333333333334"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNT-zu-Scs">
+                                    <rect key="frame" x="8" y="8" width="378" height="209.33333333333334"/>
+                                    <state key="normal" image="one"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="zKb-mj-45m"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="YNT-zu-Scs" firstAttribute="top" secondItem="YMD-KQ-rqq" secondAttribute="top" constant="8" id="4uG-Ds-puR"/>
+                                <constraint firstAttribute="trailing" secondItem="YNT-zu-Scs" secondAttribute="trailing" constant="8" id="66z-ad-Hcy"/>
+                                <constraint firstAttribute="bottom" secondItem="YNT-zu-Scs" secondAttribute="bottom" constant="8" id="Zgs-gS-xLd"/>
+                                <constraint firstItem="YNT-zu-Scs" firstAttribute="leading" secondItem="YMD-KQ-rqq" secondAttribute="leading" constant="8" id="wv9-uw-Kv5"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrB-8l-gyE">
+                            <rect key="frame" x="0.0" y="235.33333333333331" width="394" height="225.33333333333331"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" tag="20" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqG-BS-tKi">
+                                    <rect key="frame" x="8" y="8" width="378" height="209.33333333333334"/>
+                                    <state key="normal" image="twolock"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="aMS-GL-LdX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="QqG-BS-tKi" secondAttribute="trailing" constant="8" id="HJP-UN-lO2"/>
+                                <constraint firstItem="QqG-BS-tKi" firstAttribute="leading" secondItem="QrB-8l-gyE" secondAttribute="leading" constant="8" id="NXP-5l-Tgb"/>
+                                <constraint firstAttribute="bottom" secondItem="QqG-BS-tKi" secondAttribute="bottom" constant="8" id="buG-9a-nYM"/>
+                                <constraint firstItem="QqG-BS-tKi" firstAttribute="top" secondItem="QrB-8l-gyE" secondAttribute="top" constant="8" id="ex3-z0-L3R"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAi-oc-9Px">
+                            <rect key="frame" x="0.0" y="470.66666666666669" width="394" height="225.33333333333331"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" tag="40" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bub-Su-Bc4">
+                                    <rect key="frame" x="8" y="8" width="378" height="209.33333333333334"/>
+                                    <state key="normal" image="threelock"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="753-rj-9NQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Bub-Su-Bc4" firstAttribute="leading" secondItem="EAi-oc-9Px" secondAttribute="leading" constant="8" id="5mb-xD-Bcv"/>
+                                <constraint firstAttribute="bottom" secondItem="Bub-Su-Bc4" secondAttribute="bottom" constant="8" id="D9u-TG-1cr"/>
+                                <constraint firstAttribute="trailing" secondItem="Bub-Su-Bc4" secondAttribute="trailing" constant="8" id="JuU-8B-pBR"/>
+                                <constraint firstItem="Bub-Su-Bc4" firstAttribute="top" secondItem="EAi-oc-9Px" secondAttribute="top" constant="8" id="luh-it-cyF"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fLr-H0-xQ1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0dY-lh-bqE"/>
+                <constraint firstAttribute="trailing" secondItem="fLr-H0-xQ1" secondAttribute="trailing" id="1qw-NW-Pa2"/>
+                <constraint firstItem="fLr-H0-xQ1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wnr-X2-4hQ"/>
+                <constraint firstItem="Uf9-J3-QvS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="art-rU-bss"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Uf9-J3-QvS" secondAttribute="bottom" constant="10" id="pg5-dF-mph"/>
+                <constraint firstItem="Uf9-J3-QvS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="rb4-Zj-G1s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uf9-J3-QvS" secondAttribute="trailing" constant="10" id="xvm-4i-2c7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fLr-H0-xQ1" secondAttribute="bottom" id="zzd-JS-vOS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="47.826086956521742" y="43.206521739130437"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="one" width="1200" height="760"/>
+        <image name="threelock" width="1200" height="760"/>
+        <image name="twolock" width="1200" height="760"/>
+    </resources>
+</document>
